@@ -21,7 +21,7 @@
 5. Once cookie is set, redirect the user to the gallery page.
 6. Create a route called `/gallery`. The gallery page is only accessible if you have the `gallery-user` cookie. You can check if this cookie exist using a Server Action/Function.
 7. Create a navigation component so that it is easier to switch between your home and gallery page. Use `<Link></Link>` component from 'next/link' instead of `<a></a>`.
-8. Fetch the photos from `https://jsonplaceholder.typicode.com/photos` and display the **thumbnails** using their `thumbnailUrl` property in the gallery page.
+8. Fetch the photos from `https://jsonplaceholder.typicode.com/photos` and display the **thumbnails** using their `thumbnailUrl` property in the gallery page. Please take note if the placeholder images are not working or broken, make sure to replace them with `https://placehold.co` images (SEE MORE INFO AT THE BOTTOM OF README FILE).
 9. Each image should be clickable. Create a dynamic route for the photo detail page.
 10. Clicking on an image will open a modal created using a `Parallel` and `Intercepting` route.
 11. Refreshing the page while the modal is open should load the actual photo detail page route.
