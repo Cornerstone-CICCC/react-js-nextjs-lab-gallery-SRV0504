@@ -10,6 +10,7 @@
 2. Make sure to use App Router for the project.
 3. Create a login route called `/login` which will contain a simple form with just a **Username** input field and **Log In** button.
 4. Clicking on the login button should trigger a Server Action or API route (you choose) which will store the username in a cookie called `gallery-user`. For example:
+
     ```ts
     response.cookies.set({
         name: 'gallery-user',
@@ -18,6 +19,7 @@
         maxAge: 10 * 60, // 10 minutes
     });
     ```
+
 5. Once cookie is set, redirect the user to the gallery page.
 6. Create a route called `/gallery`. The gallery page is only accessible if you have the `gallery-user` cookie. You can check if this cookie exist using a Server Action/Function.
 7. Create a navigation component so that it is easier to switch between your home and gallery page. Use `<Link></Link>` component from 'next/link' instead of `<a></a>`.
